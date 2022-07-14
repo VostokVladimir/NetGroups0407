@@ -34,8 +34,8 @@ public class PlayFabConnect : MonoBehaviour,IConnectionCallbacks,IInRoomCallback
         if (string.IsNullOrEmpty(titleId))
             titleId = PlayerFab_ID;
 
-        var request = new LoginWithCustomIDRequest {CustomId="User00" , CreateAccount=true};
-        PlayFabClientAPI.LoginWithCustomID(request, Success, Fail);
+        //var request = new LoginWithCustomIDRequest {CustomId="User00" , CreateAccount=true};
+        //PlayFabClientAPI.LoginWithCustomID(request, Success, Fail);
     }
 
     private void Success(LoginResult result)
