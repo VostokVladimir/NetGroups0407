@@ -2,6 +2,7 @@
 using Photon.Realtime;
 using PlayFab;
 using PlayFab.ClientModels;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -12,9 +13,11 @@ public class PlayFabConnect : MonoBehaviour,IConnectionCallbacks,IInRoomCallback
 
     [SerializeField]private GameObject _canvac;
     private const string PlayerFab_ID = "5E23E";
-    private string _game_version = "Dev";
+    private const string AuthentificationKey= "first_Player";
+    private const string _game_version = "Dev";
     private GameObject text;
     private Text textLabel;
+
 
 
     void Awake ()
@@ -34,15 +37,28 @@ public class PlayFabConnect : MonoBehaviour,IConnectionCallbacks,IInRoomCallback
         if (string.IsNullOrEmpty(titleId))
             titleId = PlayerFab_ID;
 
-        //var request = new LoginWithCustomIDRequest {CustomId="User00" , CreateAccount=true};
-        //PlayFabClientAPI.LoginWithCustomID(request, Success, Fail);
+        
+    }
+
+    public void StartGUID()
+    {
+        var titleId = PlayFabSettings.staticSettings.TitleId;
+
+        if (string.IsNullOrEmpty(titleId))
+            titleId = PlayerFab_ID;
+
+        var needCreationGUID = !PlayerPrefs.HasKey(AuthentificationKey);
+        var id = PlayerPrefs.GetString(AuthentificationKey, Guid.NewGuid().ToString());//если key - false, вызывается NewGuid
+        var request = new LoginWithCustomIDRequest {CustomId=id , CreateAccount=needCreationGUID};
+        PlayFabClientAPI.LoginWithCustomID(request, Success, Fail);
+
     }
 
     private void Success(LoginResult result)
         {
          Debug.Log($"ProFile Server connection has done {result.PlayFabId}");
-       textLabel.color = Color.green;
-        textLabel.text = $"ProFile Server connection has done { result.PlayFabId }.Press button Connect Game Server, Please ";
+         textLabel.color = Color.green;
+         textLabel.text = $"ProFile Server connection has done { result.PlayFabId }.Press button Connect Game Server, Please ";
          
         }
 
