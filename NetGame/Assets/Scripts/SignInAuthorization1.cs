@@ -64,7 +64,7 @@ public class SignInAuthorization1 : MonoBehaviour
 
         });
         Invoke("PanelOff", 5f);
-        this.gameObject.SetActive(false);//почему тут панельне диактивируется
+        this.gameObject.SetActive(false);//почему тут панель не диактивируется
     }
 
     public void PrintInfo(string info)

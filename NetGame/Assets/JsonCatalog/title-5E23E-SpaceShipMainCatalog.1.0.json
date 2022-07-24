@@ -1,0 +1,237 @@
+{
+  "CatalogVersion": "SpaceShipMainCatalog.1.0",
+  "Catalog": [
+    {
+      "ItemId": "Lazer",
+      "ItemClass": "LazerWeapon",
+      "CatalogVersion": "SpaceShipMainCatalog.1.0",
+      "DisplayName": "Lazer\"SkyWalker\"",
+      "Description": "For beginers.",
+      "VirtualCurrencyPrices": {
+        "SK": 1
+      },
+      "RealCurrencyPrices": {},
+      "Tags": [
+        "Weapon"
+      ],
+      "CustomData": "{\"Count\":\"2\"}",
+      "Consumable": {
+        "UsageCount": null,
+        "UsagePeriod": null,
+        "UsagePeriodGroup": null
+      },
+      "Container": null,
+      "Bundle": null,
+      "CanBecomeCharacter": false,
+      "IsStackable": true,
+      "IsTradable": false,
+      "ItemImageUrl": null,
+      "IsLimitedEdition": false,
+      "InitialLimitedEditionCount": 0,
+      "ActivatedMembership": null
+    },
+    {
+      "ItemId": "PowerSupply01",
+      "ItemClass": "LazerWeapon",
+      "CatalogVersion": "SpaceShipMainCatalog.1.0",
+      "DisplayName": "PowerSupplyLazer",
+      "Description": "100 mVt Energy for  LazerEniken",
+      "VirtualCurrencyPrices": {
+        "SK": 10
+      },
+      "RealCurrencyPrices": {},
+      "Tags": [
+        "Amunition"
+      ],
+      "CustomData": "{\"Count\":\"1\"}",
+      "Consumable": {
+        "UsageCount": 1,
+        "UsagePeriod": null,
+        "UsagePeriodGroup": null
+      },
+      "Container": null,
+      "Bundle": null,
+      "CanBecomeCharacter": false,
+      "IsStackable": false,
+      "IsTradable": true,
+      "ItemImageUrl": null,
+      "IsLimitedEdition": false,
+      "InitialLimitedEditionCount": 0,
+      "ActivatedMembership": null
+    },
+    {
+      "ItemId": "Compensator",
+      "ItemClass": "LazerWeapon",
+      "CatalogVersion": "SpaceShipMainCatalog.1.0",
+      "DisplayName": "CompensatorLazerSkyWalker",
+      "Description": "Make Lazer more effective. Damage +10",
+      "VirtualCurrencyPrices": {
+        "SK": 15
+      },
+      "RealCurrencyPrices": {},
+      "Tags": [
+        "Amunition"
+      ],
+      "CustomData": "{\"Count\":\"1\"}",
+      "Consumable": {
+        "UsageCount": null,
+        "UsagePeriod": null,
+        "UsagePeriodGroup": null
+      },
+      "Container": null,
+      "Bundle": null,
+      "CanBecomeCharacter": false,
+      "IsStackable": false,
+      "IsTradable": true,
+      "ItemImageUrl": null,
+      "IsLimitedEdition": false,
+      "InitialLimitedEditionCount": 0,
+      "ActivatedMembership": null
+    },
+    {
+      "ItemId": "bnd1",
+      "ItemClass": null,
+      "CatalogVersion": "SpaceShipMainCatalog.1.0",
+      "DisplayName": null,
+      "Description": null,
+      "VirtualCurrencyPrices": {},
+      "RealCurrencyPrices": {},
+      "Tags": [],
+      "CustomData": null,
+      "Consumable": {
+        "UsageCount": 1,
+        "UsagePeriod": null,
+        "UsagePeriodGroup": null
+      },
+      "Container": null,
+      "Bundle": {
+        "BundledItems": [
+          "PowerSupply01",
+          "Compensator"
+        ],
+        "BundledResultTables": [],
+        "BundledVirtualCurrencies": {
+          "SK": 10
+        }
+      },
+      "CanBecomeCharacter": false,
+      "IsStackable": false,
+      "IsTradable": false,
+      "ItemImageUrl": null,
+      "IsLimitedEdition": false,
+      "InitialLimitedEditionCount": 0,
+      "ActivatedMembership": null
+    },
+    {
+      "ItemId": "Cont1",
+      "ItemClass": "PresentContainers",
+      "CatalogVersion": "SpaceShipMainCatalog.1.0",
+      "DisplayName": "Present1",
+      "Description": "Gives +1 Lazer",
+      "VirtualCurrencyPrices": {},
+      "RealCurrencyPrices": {},
+      "Tags": [],
+      "CustomData": null,
+      "Consumable": {
+        "UsageCount": 1,
+        "UsagePeriod": null,
+        "UsagePeriodGroup": null
+      },
+      "Container": {
+        "KeyItemId": null,
+        "ItemContents": [
+          "Lazer"
+        ],
+        "ResultTableContents": [],
+        "VirtualCurrencyContents": null
+      },
+      "Bundle": null,
+      "CanBecomeCharacter": false,
+      "IsStackable": false,
+      "IsTradable": true,
+      "ItemImageUrl": null,
+      "IsLimitedEdition": false,
+      "InitialLimitedEditionCount": 0,
+      "ActivatedMembership": null
+    },
+    {
+      "ItemId": "bnd2",
+      "ItemClass": null,
+      "CatalogVersion": "SpaceShipMainCatalog.1.0",
+      "DisplayName": "Bundle",
+      "Description": null,
+      "VirtualCurrencyPrices": {},
+      "RealCurrencyPrices": null,
+      "Tags": [],
+      "CustomData": null,
+      "Consumable": {
+        "UsageCount": 1,
+        "UsagePeriod": null,
+        "UsagePeriodGroup": null
+      },
+      "Container": null,
+      "Bundle": {
+        "BundledItems": [],
+        "BundledResultTables": [
+          "DropTable01"
+        ],
+        "BundledVirtualCurrencies": {
+          "SK": 100
+        }
+      },
+      "CanBecomeCharacter": false,
+      "IsStackable": false,
+      "IsTradable": false,
+      "ItemImageUrl": null,
+      "IsLimitedEdition": false,
+      "InitialLimitedEditionCount": 0,
+      "ActivatedMembership": null
+    },
+    {
+      "ItemId": "Arm1",
+      "ItemClass": "Armor",
+      "CatalogVersion": "SpaceShipMainCatalog.1.0",
+      "DisplayName": "Armor",
+      "Description": "Armor for SpacrShip",
+      "VirtualCurrencyPrices": {
+        "SK": 20
+      },
+      "RealCurrencyPrices": null,
+      "Tags": [
+        "Amunition"
+      ],
+      "CustomData": null,
+      "Consumable": {
+        "UsageCount": 1,
+        "UsagePeriod": null,
+        "UsagePeriodGroup": null
+      },
+      "Container": null,
+      "Bundle": null,
+      "CanBecomeCharacter": false,
+      "IsStackable": false,
+      "IsTradable": true,
+      "ItemImageUrl": null,
+      "IsLimitedEdition": false,
+      "InitialLimitedEditionCount": 0,
+      "ActivatedMembership": null
+    }
+  ],
+  "DropTables": [
+    {
+      "TableId": "DropTable01",
+      "Nodes": [
+        {
+          "ResultItemType": "ItemId",
+          "ResultItem": "Compensator",
+          "Weight": 1
+        },
+        {
+          "ResultItemType": "ItemId",
+          "ResultItem": "PowerSupply01",
+          "Weight": 4
+        }
+      ]
+    }
+  ]
+}

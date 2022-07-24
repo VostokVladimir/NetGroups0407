@@ -16,6 +16,7 @@ public class GUIDAuthorization : MonoBehaviour
     private const string AuthKey = "AythKey";
     [SerializeField]public GameObject panelController;
     [SerializeField] public GameObject UserPanelInfo;
+    [SerializeField] public CatalogManager catalog;
     public struct Data
     {
         public string id;
@@ -57,6 +58,7 @@ public class GUIDAuthorization : MonoBehaviour
         PlayFabClientAPI.LoginWithCustomID(request,Success,Fail,data);
         gameObject.SetActive(false);
         Invoke("PanelOff", 5f);
+        
     }
 
     private void Success(LoginResult result)
@@ -72,6 +74,7 @@ public class GUIDAuthorization : MonoBehaviour
             Debug.Log($"GUID is {textId}");
             _statusInfo.text = $"GUID authorization has done { info }";
             PrintInfo(textId);
+            catalog.GetCatalog();
         }
         else
         {
